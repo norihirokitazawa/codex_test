@@ -7,6 +7,7 @@ GitHubの練習用リポジトリです。
 - Issueを使って課題を管理する
 - BranchとPull Requestを練習する
 - GitHub Actionsを試す
+
 ## 使い方
 
 1. Issueに課題や要望を書く
