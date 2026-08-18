@@ -1,0 +1,21 @@
+name: README check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check README
+        shell: bash
+        run: |
+          test -f README.md
+          grep -q '^## 使い方$' README.md
+          echo "README check passed"
