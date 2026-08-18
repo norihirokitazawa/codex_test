@@ -17,5 +17,5 @@ jobs:
         shell: bash
         run: |
           test -f README.md
-          grep -q '^## 存在しない見出し$' README.md
+          grep -q '^## 使い方$' README.md
           echo "README check passed"
